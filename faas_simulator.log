@@ -1,0 +1,18 @@
+2025-11-03 03:30:50,764 [INFO] - Starting FaaS Simulator on http://0.0.0.0:8000
+2025-11-03 03:32:50,109 [INFO] - Received execution request. Code snippet: 
+import time
+print("Hello from the FaaS simulator!...
+2025-11-03 03:32:51,340 [INFO] - Execution success. Start: 2025-11-03 03:32:50 UTC, End: 2025-11-03 03:32:51 UTC, Duration: 1228.81ms, Cost: $0.0000029040
+2025-11-03 03:32:51,343 [INFO] - Received execution request. Code snippet: 
+x = 10
+y = 0
+print(x / y) # This will raise a Zer...
+2025-11-03 03:32:51,360 [INFO] - Execution error. Start: 2025-11-03 03:32:51 UTC, End: 2025-11-03 03:32:51 UTC, Duration: 16.61ms, Cost: $0.0000004080
+2025-11-03 03:32:51,360 [ERROR] - Function failed with stderr: Traceback (most recent call last):
+  File "/tmp/tmpqp_hfc9n.py", line 4, in <module>
+    print(x / y) # This will raise a ZeroDivisionError
+          ~~^~~
+ZeroDivisionError: division by zero
+
+2025-11-03 03:32:51,363 [INFO] - Received execution request. Code snippet: import time; time.sleep(2); print('Slow job done.'...
+2025-11-03 03:32:53,382 [INFO] - Execution success. Start: 2025-11-03 03:32:51 UTC, End: 2025-11-03 03:32:53 UTC, Duration: 2017.66ms, Cost: $0.0000045680
